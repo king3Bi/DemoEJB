@@ -1,0 +1,10 @@
+eclipse.preferences.version=1
+encoding//src/main/java/com/ejb/demo/servlet/role/DeleteRoleServlet.java=UTF-8
+encoding//src/main/java/com/ejb/demo/servlet/role/InsertRoleServlet.java=UTF-8
+encoding//src/main/java/com/ejb/demo/servlet/role/UpdateRoleServlet.java=UTF-8
+encoding//src/main/java/com/ejb/demo/servlet/user/DeleteUserServlet.java=UTF-8
+encoding//src/main/java/com/ejb/demo/servlet/user/DisableUserServlet.java=UTF-8
+encoding//src/main/java/com/ejb/demo/servlet/user/EnableUserServlet.java=UTF-8
+encoding//src/main/java/com/ejb/demo/servlet/user/InsertUserServlet.java=UTF-8
+encoding//src/main/java/com/ejb/demo/servlet/user/UpdateUserServlet.java=UTF-8
+encoding//src/main/webapp/views/role/role.jsp=UTF-8
