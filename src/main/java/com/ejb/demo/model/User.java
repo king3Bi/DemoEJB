@@ -9,28 +9,36 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
+import com.google.gson.annotations.Expose;
+
 @Entity
 @Table(name = "user")
 public class User {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Expose
 	private int id;
 	
 	@Column(name = "full_name")
+	@Expose
 	private String fullName;
 	
 	@Column(name = "username")
+	@Expose
 	private String username;
 	
 	@Column(name = "password")
+	@Expose
 	private String password;
 	
 	@Column(name = "enable")
+	@Expose
 	private boolean enable;
 	
 	@ManyToOne
 	@JoinColumn(name = "role_id")
+	@Expose
 	private Role role;
 	
 	public User() {}

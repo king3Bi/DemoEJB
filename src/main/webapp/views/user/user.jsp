@@ -22,8 +22,8 @@
 					<th></th>
 				</tr>
 			</thead>
-			<tbody>
-
+			<tbody id="tbUser">
+				<!-- 
 				<c:forEach items="${usersList}" var="user">
 					<tr>
 						<td><c:out value="${user.id}"></c:out></td>
@@ -48,10 +48,14 @@
 							<a class="btn btn-danger"
 							href="${pageContext.request.contextPath}/user/delete?id=${user.id}">Xóa</a></td>
 					</tr>
-				</c:forEach>
+				</c:forEach>  -->
 
 			</tbody>
 		</table>
+		
+		<script type="text/javascript">
+			loadUserTable();
+		</script>
 	</div>
 </rapid:override>
 

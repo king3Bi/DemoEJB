@@ -20,8 +20,9 @@
 					<th></th>
 				</tr>
 			</thead>
-			<tbody>
-
+			<tbody id="tbRole">
+			
+				<!-- 
 				<c:forEach items="${rolesList}" var="role">
 					<tr>
 						<td><c:out value="${role.id}"></c:out></td>
@@ -34,10 +35,14 @@
 							href="${pageContext.request.contextPath}/role/delete?id=${role.id}">Xóa</a>
 						</td>
 					</tr>
-				</c:forEach>
+				</c:forEach> -->
 
 			</tbody>
 		</table>
+		
+		<script type="text/javascript">
+			loadRoleTable();
+		</script>
 	</div>
 </rapid:override>
 

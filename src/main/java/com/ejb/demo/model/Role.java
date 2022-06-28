@@ -10,18 +10,23 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
+import com.google.gson.annotations.Expose;
+
 @Entity
 @Table(name = "role")
 public class Role {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Expose
 	private int id;
 	
 	@Column(name = "name")
+	@Expose
 	private String name;
 	
 	@Column(name = "description")
+	@Expose
 	private String description;
 
 	@OneToMany(mappedBy = "role")

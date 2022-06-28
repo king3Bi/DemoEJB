@@ -11,7 +11,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.ejb.demo.model.Role;
 import com.ejb.demo.model.User;
+import com.ejb.demo.service.RoleService;
 import com.ejb.demo.service.UserService;
 
 @WebServlet("/user")
@@ -21,6 +23,8 @@ public class UserServlet extends HttpServlet {
 	@EJB
 	UserService userService;
 	
+	@EJB
+	RoleService roleService;
        
     public UserServlet() {
         super();
@@ -31,6 +35,9 @@ public class UserServlet extends HttpServlet {
 		
 		List<User> usersList = userService.getAll();
 		request.setAttribute("usersList", usersList);
+		
+		List<Role> rolesList = roleService.getAll();
+		request.setAttribute("rolesList", rolesList);
 		
 		RequestDispatcher dispatcher = request.getRequestDispatcher("/views/user/user.jsp");
 		dispatcher.forward(request, response);

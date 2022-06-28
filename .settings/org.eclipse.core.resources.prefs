@@ -1,4 +1,6 @@
 eclipse.preferences.version=1
+encoding//src/main/java/com/ejb/demo/apiv1/RoleApi.java=UTF-8
+encoding//src/main/java/com/ejb/demo/apiv1/UserApi.java=UTF-8
 encoding//src/main/java/com/ejb/demo/servlet/role/DeleteRoleServlet.java=UTF-8
 encoding//src/main/java/com/ejb/demo/servlet/role/InsertRoleServlet.java=UTF-8
 encoding//src/main/java/com/ejb/demo/servlet/role/UpdateRoleServlet.java=UTF-8
